@@ -14,7 +14,9 @@ module.exports = {
       },
 
       colors: {
-        mainColor: "#ec1f55",
+        SideBar: "#000",
+        mainColor: "#18d860",
+        SideBarText: "#b3b3b3",
       },
     },
   },
