@@ -2,4 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body { font-family: "Spartan", sans-serif; }
+body {
+  font-family: "Spartan", sans-serif;
+}
+
+@layer components {
+  .button {
+    @apply w-5 h-5 cursor-pointer hover:scale-125 transition transform duration-100 ease-out;
+  }
+}
