@@ -1,4 +1,4 @@
-import spotifyApi, { LOGIN_URL, scopes } from "@/lib/spotify";
+import spotifyApi, { LOGIN_URL } from "@/lib/spotify";
 import NextAuth from "next-auth";
 import SpotifyProvider from "next-auth/providers/spotify";
 
@@ -35,12 +35,7 @@ export default NextAuth({
     SpotifyProvider({
       clientId: process.env.NEXT_PUBLIC_CLIENT_ID,
       clientSecret: process.env.NEXT_PUBLIC_CLIENT_SECRET,
-      authorization: {
-        url: "https://accounts.spotify.com/authorize",
-        params: {
-          scope: scopes,
-        },
-      },
+      authorization: LOGIN_URL,
     }),
     // ...add more providers here
   ],

@@ -32,7 +32,7 @@ export default function Song({ order, item }) {
         />
 
         <div>
-          <p className="w-36 lg:w-64 text-white truncate pt-1">
+          <p className="w-40 lg:w-64 text-white truncate pt-1">
             {item.track.name}
           </p>
           <p className="w-40 ">{item.track.artists[0].name}</p>
